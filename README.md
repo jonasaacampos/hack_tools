@@ -18,6 +18,7 @@
 - Os códigos foram levemente alterados para remover informações sensíveis
 - Compartilho estes códigos para fins didáticos e que te ajudem em tarefas ~~chatas~~ repetitivas
 - Ferramentas para tarefas simples, mas que ajudam demais em certos casos. 
+- Sempre que lembrar vou colocar as saídas e documentações em português. Embora todo o código siga o padrão internacional, acredito que assim a barreira do idioma não atrapalhe quem deseja estudar.
 
 Código fonte e aplicação gratuito para quaisquer finalidades. Peço que se possível:
 
@@ -26,7 +27,15 @@ Código fonte e aplicação gratuito para quaisquer finalidades. Peço que se po
 
 -------------
 
-[[toc]]
+<h2>Índice</h3>
+
+- [Hack Tools](#hack-tools)
+  - [Get Whois](#get-whois)
+  - [Get Dev Information](#get-dev-information)
+  - [Cont(r)ate-me 📫:](#contrate-me-)
+
+-------------
+
 
 ## Get Whois
 > Recebe um domínio e retorna os dados do whois.
