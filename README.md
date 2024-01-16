@@ -6,9 +6,9 @@
 
 # Hack Tools
 
-> Aplicações e scripts para obeter informações de maneira automatizada. Em lguns casos, não é possível/necessário instalar ferramentas mais robustas. 
+> Aplicações e scripts para obter informações de maneira automatizada. Em alguns casos, não é possível/necessário instalar ferramentas mais robustas. 
 
-> São scripts que uso ou já usei para algum trabalho. Server pra **aprendizado** e **crescimento profissional**. Planejo voltar e atualizar essas ferramentas e documentação sempre que possível.
+> São scripts que uso ou já usei para algum trabalho. Servem para **aprendizado** e **crescimento profissional**. Planejo voltar e atualizar essas ferramentas e documentação sempre que possível.
 
 > Via de regra as ferramentas estão prontas para uso, e instalam dependências necessárias de forma automática. Basta seguir o exemplo de uso listado logo abaixo do nome de cada ferramenta. O código fonte é aberto para conferência e sugestões.
 
