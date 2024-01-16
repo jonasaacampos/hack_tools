@@ -39,12 +39,14 @@ if list_analyser == '' or list_analyser.isnumeric:
             domain = 'https://' + sys.argv[1] + '/' + site_directories_small_list[i]
             r = requests.get(domain)
             #verbose mode
-            print(f'{i + 1} / {list_analyser}| {text_decorator * 3} {site_directories_small_list[i]} {text_decorator * 3}')
+            print(f'{i + 1} / {list_analyser}| {text_decorator * 3} {site_directories_small_list[i]} {text_decorator * 3}',end='. ')
             #print(domain)
 
             if r.status_code == 200:
                 target_success.append(domain)
-        except requests.exceptions.ConnectTimeout:
+                print(f' => {r.status_code}', end='\n')
+        except requests.exceptions.RequestException as e:
+            print(f' => {e}', end='\n')
             target_fail.append(domain)
 
 print(f'''
@@ -55,14 +57,18 @@ These sites are successfuly in request:''')
 for domain in target_success:
     print(domain)
 
-temp_dir = os.path.join('temp', 'target_fail.txt')
+diretorio_temp = 'temp'
 
-if not os.path.exists(temp_dir):
-    os.makedirs(temp_dir)
+if not os.path.exists(diretorio_temp):
+    os.makedirs(diretorio_temp)
 
-with open(temp_dir, 'w') as file:
-    # Escrevendo cada elemento da lista em uma nova linha do arquivo
+file_path = os.path.join(diretorio_temp, 'target_fail.txt')
+
+# Abrindo o arquivo para escrita
+with open(file_path, 'w') as file:
     for line in target_fail:
         file.write(f"{line}\n")
+
+print(f"Arquivo criado com sucesso em: {file_path}")
 
 print('Great powers, great responsabilies')
